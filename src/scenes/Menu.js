@@ -8,6 +8,7 @@ class Menu extends Phaser.Scene{
     }
 
     create(){
+        console.log("in menu scene");
         this.cameras.main.setBackgroundColor(0,0,0);
     }
 
