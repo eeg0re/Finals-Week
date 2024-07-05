@@ -29,3 +29,5 @@ let game = new Phaser.Game(config);
 
 let cursors;
 let {height, width} = game.config;
+let midX = width/2;
+let midY = height/2;

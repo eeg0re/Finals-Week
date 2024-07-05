@@ -18,7 +18,10 @@ class Load extends Phaser.Scene{
         });
 
         // set the load path
-        this.load.path = './assets'
+        this.load.path = './assets/'
+
+        // load images
+        this.load.image('empty room', 'isometric room 1.png');
 
 
     }
