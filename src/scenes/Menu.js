@@ -14,6 +14,9 @@ class Menu extends Phaser.Scene{
         // add background
         this.cameras.main.setBackgroundColor(0,0,0);
 
+        // add text 
+        
+
     }
 
     update(){
