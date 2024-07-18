@@ -42,19 +42,17 @@ class Menu extends Phaser.Scene{
 
         playButton.on("pointerout", ()=>{
             hoverSprite.setVisible(false);
-            console.log("outta here");
         });
 
         playButton.on("pointerup", ()=>{
-            console.log("open na noor");
+            this.scene.start('night1Scene');
         });
-
 
     }
 
     update(){
-        if(Phaser.Input.Keyboard.JustDown(cursors.right)){
-            this.scene.start('night1Scene');
-        }
+        // if(Phaser.Input.Keyboard.JustDown(cursors.right)){
+        //     this.scene.start('night1Scene');
+        // }
     }
 }
