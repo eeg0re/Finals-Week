@@ -47,7 +47,7 @@ class Load extends Phaser.Scene{
         //     progress - loader number progress is in decimal 
         this.load.on("progress", (percent)=> {
             loading.fillRect(0, this.game.renderer.height/2, this.game.renderer.width * percent, 50);
-            console.log(percent);
+            //console.log(percent);
         });
 
         this.load.on("complete", ()=>{
