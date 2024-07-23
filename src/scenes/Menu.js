@@ -20,7 +20,7 @@ class Menu extends Phaser.Scene{
 
         // add background
         //this.cameras.main.setBackgroundColor(0,0,0);
-        this.add.image(0,0, "title_bg").setOrigin(0).setDepth(0);
+        this.add.image(0,0, "title_bg").setOrigin(0).setDepth(0).setScale(0.35);
         // add logo
         this.add.image(this.game.renderer.width/2, this.game.renderer.height*0.2, "logo").setDepth(1);
         let playButton = this.add.image(this.game.renderer.width/2, this.game.renderer.height / 2, "play_button").setDepth(1); 

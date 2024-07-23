@@ -23,7 +23,7 @@ class Load extends Phaser.Scene{
         // load images
         this.load.image('empty room', 'isometric room 1.png');
 
-        this.load.image("title_bg", "title_bg.jpg");
+        this.load.image("title_bg", "title_bg.jpeg");
 
         this.load.image("options_button", "options_button.png");
 
