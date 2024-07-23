@@ -29,7 +29,7 @@ class Load extends Phaser.Scene{
 
         this.load.image("play_button", "play_button.png");
 
-        this.load.image("logo", "logo.png");
+        this.load.image("logo", "title.png");
 
         this.load.spritesheet("cat", "cat.png", {
             frameHeight: 32, 

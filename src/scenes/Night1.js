@@ -8,9 +8,9 @@ class Night1 extends Phaser.Scene{
     }
 
     create(){
-        console.log("starting night 1");
         this.cameras.main.setBackgroundColor(0,50,50);
-        this.add.image(midX, midY, 'empty room').setOrigin(0);
+        //this.add.image(midX, midY, 'empty room').setOrigin(0).setScale(2);
+        this.add.image(midX, midY, 'empty room').setOrigin(0.25).setScale(2);
         this.kitty = this.physics.add.sprite(width/2, height/2, 'cat');
 
         // working on point and click stuff

@@ -22,7 +22,7 @@ class Menu extends Phaser.Scene{
         //this.cameras.main.setBackgroundColor(0,0,0);
         this.add.image(0,0, "title_bg").setOrigin(0).setDepth(0).setScale(0.35);
         // add logo
-        this.add.image(this.game.renderer.width/2, this.game.renderer.height*0.2, "logo").setDepth(1);
+        this.add.image(this.game.renderer.width/2, this.game.renderer.height*0.2, "logo").setDepth(1).setScale(0.14);
         let playButton = this.add.image(this.game.renderer.width/2, this.game.renderer.height / 2, "play_button").setDepth(1); 
         this.add.image(this.game.renderer.width/2, this.game.renderer.height / 2 + 100, "options_button").setDepth(1); 
 
@@ -30,7 +30,8 @@ class Menu extends Phaser.Scene{
         let hoverSprite = this.add.sprite(100, 100, "cat");
         hoverSprite.setScale(2);
 
-
+        // change play button size
+        playButton.setScale(0.07)
         // make play button interactive
         playButton.setInteractive();
 
