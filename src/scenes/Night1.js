@@ -22,6 +22,8 @@ class Night1 extends Phaser.Scene{
             this.target.y = worldY;
             this.physics.moveToObject(this.kitty, this.target, 200);
         });
+
+        this.task1 = new Task(this, 100, 100, "icons", 5);
     }
     
     update(){

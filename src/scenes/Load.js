@@ -37,6 +37,11 @@ class Load extends Phaser.Scene{
             frameWidth: 32
         });
 
+        this.load.spritesheet("icons", "CuteRPG_Icons03.png", {
+            frameHeight: 32, 
+            frameWidth: 32
+        });
+
         // create the loading bar
         let loading = this.add.graphics({
             fillStyle: {

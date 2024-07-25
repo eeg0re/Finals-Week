@@ -1,5 +1,5 @@
 class Character extends Phaser.Physics.Arcade.Sprite{
-    constructor(scene,  x, y, texture, frame, direction){
+    constructor(scene,  x, y, texture, frame, direction, name){
         super(scene, x, y, texture, frame);
 
         // add object to existing scene
@@ -8,6 +8,7 @@ class Character extends Phaser.Physics.Arcade.Sprite{
         // set custom player properties
         this.velocity = 200;
         this.direction = direction;
+        this.name = name; 
 
         scene.charFSM = new StateMachine('studying', {
             studying: new StudyState(),
