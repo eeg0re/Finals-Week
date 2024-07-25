@@ -22,6 +22,11 @@ class Task extends Phaser.Physics.Arcade.Sprite{
             loop: -1,
             yoyo: true
         });
+
+        // make the icon interactive
+        this.setInteractive();
+        this.on('pointerdown', () => this.setTint(0xf20018));
+        this.on('pointerup', () => this.setTint(0xffffff));
     }
 
     update(){
