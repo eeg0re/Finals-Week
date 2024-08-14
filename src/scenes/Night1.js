@@ -8,13 +8,22 @@ class Night1 extends Phaser.Scene{
     }
 
     create(){
+        // set the background color (temp until background is made)
         this.cameras.main.setBackgroundColor(0,50,50);
-        //this.add.image(midX, midY, 'empty room').setOrigin(0).setScale(2);
+        // add the room image         
         this.add.image(midX, midY, 'empty room').setOrigin(0.25).setScale(2);
-        this.kitty = this.physics.add.sprite(width/2, height/2, 'cat');
+
+        // add player sprites 
+        this.kitty = this.physics.add.sprite(width/2, height/2, 'cat'); // temp kitty sprite
+
+        // add player(s) to a group 
+        this.characters = this.add.group({
+            // set properties we want true for characters
+            setAllowGravity: false,
+            collideWorldBounds: true
+        });
 
         // working on point and click stuff
-        this.kitty.body.setAllowGravity(false);
         this.target = new Phaser.Math.Vector2();
         this.input.on('pointerup', (pointer)=>{
             const {worldX, worldY} = pointer; 

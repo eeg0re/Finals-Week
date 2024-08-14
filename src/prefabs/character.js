@@ -25,8 +25,7 @@ class Character extends Phaser.Physics.Arcade.Sprite{
 
 class StudyState extends State{
         enter(scene, character){
-            //this.studying = true; 
-
+            this.studying = true; 
         }
 
         execute(scene, character){
@@ -36,7 +35,7 @@ class StudyState extends State{
 
 class MoveState extends State{
     enter(scene, character){
-
+        this.studying = false; 
     }
 
     execute(scene, character){
@@ -46,7 +45,7 @@ class MoveState extends State{
 
 class BusyState extends State{
     enter(scene, character){
-
+        this.studying = false;
     }
 
     execute(scene, character){
@@ -56,7 +55,7 @@ class BusyState extends State{
 
 class EmergencyState extends State{
     enter(scene, character){
-
+        this.studying = false; 
     }
 
     execute(scene, character){
